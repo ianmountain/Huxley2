@@ -66,3 +66,11 @@ stages:
         WebAppName: 'huxley2'
         packageForLinux: '$(Build.ArtifactStagingDirectory)/**/Huxley2.zip'
         RuntimeStack: 'DOTNETCORE|6.0'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Free Trial(e78f5ea0-bc84-42ba-8122-2a20415a6d00)'
+    appType: 'webAppLinux'
+    WebAppName: 'ale-trail'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/Huxley2.zip'
+    RuntimeStack: 'DOTNETCORE|6.0'
