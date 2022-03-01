@@ -63,3 +63,5 @@ curl --silent --insecure https://localhost:5001/crs | jq -r '(.[0] | keys_unsort
 Licensed under the [EUPL-1.2-or-later](https://joinup.ec.europa.eu/collection/eupl/introduction-eupl-licence).
 
 The EUPL covers distribution through a network or SaaS (like a compatible and interoperable AGPL).
+
+Edited for AppHarbor
